@@ -2,13 +2,11 @@ version: "3"
 services:
   app:
     build: ./app
-    depends_on:
+    link:
       - db
     ports:
       - "5000:5000"
-    networks:
-      - app-tier  
-
+   
   db:
     image: mysql:5.7
     ports:
@@ -17,10 +15,5 @@ services:
       MYSQL_ROOT_PASSWORD: root
     volumes:
       - ./db:/docker-entrypoint-initdb.d/:ro
-    networks:
-      - app-tier
-      
-  networks:
-  app-tier:
-    driver: bridge   
+
     
