@@ -12,7 +12,7 @@ node {
     }
     stage('docker containers testing') {
                  sh 'wget 18.236.120.30:5001' 
-                 sh 'wget 18.236.120.30:3306
+                 sh 'wget 18.236.120.30:3306'
     }   
     stage('docker images  push') {
                 sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
