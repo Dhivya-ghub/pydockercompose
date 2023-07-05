@@ -10,7 +10,7 @@ services:
       - my-network
     depends_on:
       - db  
-    link:
+    links:
       -db:mysql
    
   db:
