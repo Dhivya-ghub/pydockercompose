@@ -11,7 +11,7 @@ node {
                  sh 'docker-compose build && docker-compose up -d'
     }
     stage('docker containers testing') {
-                 sh 'wget 54.212.15.34:5000' 
+                 sh 'wget 34.209.125.101 :5000' 
                  
     }   
     stage('docker images  push') {
