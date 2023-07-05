@@ -1,4 +1,4 @@
-version: "2"
+version: "3"
 services:
   app:
     build: ./app
@@ -22,5 +22,5 @@ services:
       
   networks:
   app-tier:
-        
+    driver: bridge   
     
