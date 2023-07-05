@@ -1,7 +1,7 @@
 node {
      checkout scm 
      environment {
-        docker_repo = "dhivyadhub/pydocker1"
+        docker_repo = "dhivyadhub/pythonapp"
         DOCKERHUB_CREDENTIALS = credentials('dockerHub')
      } 
     stage ('Cleaning Local Images and Containers') {
