@@ -11,7 +11,7 @@ services:
     depends_on:
       - db  
     links:
-      -db:mysql
+      -db
    
   db:
     image: mysql:5.7
