@@ -10,6 +10,8 @@ services:
       - my-network
     depends_on:
       - db  
+    link:
+      -db:mysql
    
   db:
     image: mysql:5.7
