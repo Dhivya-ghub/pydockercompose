@@ -1,5 +1,5 @@
-CREATE DATABASE knight;
-use knight;
+CREATE DATABASE knights;
+use knights;
 
 CREATE TABLE favorite_colors (
   name VARCHAR(20),
