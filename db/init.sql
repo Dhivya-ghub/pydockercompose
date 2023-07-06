@@ -1,4 +1,4 @@
-CREATE DATABASE knights;
+CREATE DATABASE knight;
 use knights;
 
 CREATE TABLE favorite_colors (
