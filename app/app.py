@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 def favorite_colors() -> List[Dict]:
     config = {
-        'user': 'root',
+        'user': 'roots',
         'password': 'root',
         'host': '52.39.232.196',
         'port': '3306',
