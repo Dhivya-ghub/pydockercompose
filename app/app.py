@@ -10,7 +10,7 @@ def favorite_colors() -> List[Dict]:
     config = {
         'user': 'root',
         'password': 'root',
-        'host': '34.221.218.209',
+        'host': '52.39.232.196',
         'port': '3306',
         'database': 'knights'
     }
