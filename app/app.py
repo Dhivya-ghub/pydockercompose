@@ -5,13 +5,12 @@ import json
 
 app = Flask(__name__)
 
-
 def favorite_colors() -> List[Dict]:
     config = {
         'user': 'root',
         'password': 'root',
         'host': '52.39.232.196',
-        'port': '3306',
+        'port': '3307',
         'database': 'knights'
     }
     connection = mysql.connector.connect(**config)
