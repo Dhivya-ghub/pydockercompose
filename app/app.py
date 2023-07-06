@@ -10,7 +10,7 @@ def favorite_colors() -> List[Dict]:
         'user': 'root',
         'password': 'root',
         'host': '52.39.232.196',
-        'port': '3307',
+        'port': '3306',
         'database': 'knights'
     }
     connection = mysql.connector.connect(**config)
