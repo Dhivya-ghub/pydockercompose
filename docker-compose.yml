@@ -5,8 +5,6 @@ services:
        context: ./app
     ports:
       - "5001:5000"
-    networks:
-      - my-network
     links:
       - db  
    
@@ -16,15 +14,6 @@ services:
       - "3308:3306"
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: knight
-      MYSQL_USER: roots
     volumes:
-      - ./db:/var/lib/mysql
       - ./db:/docker-entrypoint-initdb.d/:ro
-    networks:
-      - my-network
-
-networks:
-  my-network:
-    driver: bridge
     
