@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        docker_repo = "dhivyadhub/pydocker1"
+        docker_repo = "dhivyadhub/pythonapp"
         DOCKERHUB_CREDENTIALS = credentials('dockerHub')
     } 
     stages {
@@ -34,7 +34,7 @@ pipeline {
         
         stage('Run Docker push') {
           steps {
-                sh 'docker push $docker_repo:$BUILD_NUMBER'
+                sh 'docker push dhivyadhub/pythonapp:1 && docker push image: dhivyadhub/pythonapp:2
                 }
            }    
     }
