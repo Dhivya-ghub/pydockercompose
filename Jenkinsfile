@@ -20,23 +20,7 @@ pipeline {
                 sh 'docker-compose up -d'
             }
         }
-        stage('Docker Testing') {
-          steps {
-                sh 'wget 35.87.218.22:5001'
-            }
-        }
-        stage('DockerHub login') {
-          steps {
-                sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
-              
-               }
-           }
-        
-        stage('Run Docker push') {
-          steps {
-                sh 'docker push dhivyadhub/pythonapp:1 && docker push dhivyadhub/pythonapp:'
-                }
-           }    
+       
     }
 }    
 
