@@ -16,7 +16,7 @@ services:
       - "3308:3306"
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: knights
+      MYSQL_DATABASE: knight
       MYSQL_USER: roots
     volumes:
       - ./db:/docker-entrypoint-initdb.d/:ro
