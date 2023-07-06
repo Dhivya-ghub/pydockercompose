@@ -19,7 +19,7 @@ services:
       MYSQL_DATABASE: knight
       MYSQL_USER: roots
     volumes:
-      - db:/var/lib/mysql
+      - ./db:/var/lib/mysql
       - ./db:/docker-entrypoint-initdb.d/:ro
     networks:
       - my-network
