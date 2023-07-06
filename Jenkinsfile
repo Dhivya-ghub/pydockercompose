@@ -34,7 +34,7 @@ pipeline {
         
         stage('Run Docker push') {
           steps {
-                sh 'docker push dhivyadhub/pythonapp:1 && docker push dhivyadhub/pythonapp:2
+                sh 'docker push dhivyadhub/pythonapp:1 && docker push dhivyadhub/pythonapp:'
                 }
            }    
     }
